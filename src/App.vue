@@ -8,131 +8,24 @@
     <h1 class="font-inter font-bold text-center text-black text-4xl m-8">
       Search properties to rent
     </h1>
+  </div>
 
+<!-- <div class="grid grid-cols-1 md:grid-cols-2"> -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
     <Searchbar class="mb-8" />
     <Searchlocation class="mb-8" />
   </div>
-  <figure class="flex flex-col mx-8">
-    <img
-      src="src/assets/house.png"
-      alt="house"
-      class="rounded-t-lg w-full h-48 object-cover"
-    />
-    <figcaption
-      class="
-        flex
-        w-full
-        flex-col
-        gap-4
-        rounded-b
-        border border-indigo-50
-        py-7
-        px-5
-      "
-    >
-      <div class="flex justify-between">
-        <div class="w-2/5">
-          <div class="flex items-center">
-            <p class="text-2xl font-bold text-indigo-500">$2700</p>
-            <span class="text-xs font-normal text-gray-900">/month</span>
-          </div>
-          <p class="text-2xl font-bold">Beverly Springfield</p>
-        </div>
-        <div
-          class="
-            flex
-            h-12
-            w-12
-            items-center
-            justify-center
-            rounded-full
-            border-2 border-indigo-100
-          "
-        >
-          <HeartIcon class="h-6 stroke-indigo-500 text-transparent"></HeartIcon>
-        </div>
-      </div>
-      <p class="text-base font-normal text-gray-900">
-        2821 Lake Sevilla, Palm Harbor, TX
-      </p>
-      <div class="w-full border border-indigo-50"></div>
-      <div class="flex justify-between">
-        <div class="flex items-center gap-2">
-          <bed class="h-5 stroke-indigo-500"></bed>
-          <span class="text-xs text-gray-500">4 Beds</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <bath class="h-5 stroke-indigo-500"></bath>
-          <span class="text-xs text-gray-500">2 Bathrooms</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <mcarre class="h-5 stroke-indigo-500"></mcarre>
-          <span class="text-xs text-gray-500">6x7.5 m²</span>
-        </div>
-      </div>
-    </figcaption>
-  </figure>
+ 
 
-  <figure class="flex flex-col mt-12 mx-8">
-    <img
-      src="src/assets/house2.png"
-      alt="house"
-      class="rounded-t-lg w-full h-48 object-cover"
-    />
-    <figcaption
-      class="
-        flex
-        w-full
-        flex-col
-        gap-4
-        rounded-b
-        border border-indigo-50
-        py-7
-        px-5
-      "
-    >
-      <div class="flex justify-between">
-        <div class="w-2/5">
-          <div class="flex items-center">
-            <p class="text-2xl font-bold text-indigo-500">$4800</p>
-            <span class="text-xs font-normal text-gray-900">/month</span>
-          </div>
-          <p class="text-2xl font-bold">Tarpon Bay</p>
-        </div>
-        <div
-          class="
-            flex
-            h-12
-            w-12
-            items-center
-            justify-center
-            rounded-full
-            border-2 border-indigo-100
-          "
-        >
-          <HeartIcon class="h-6 stroke-indigo-500 text-transparent"></HeartIcon>
-        </div>
-      </div>
-      <p class="text-base font-normal text-gray-900">
-        103 Lake Shores, Michigan, IN
-      </p>
-      <div class="w-full border border-indigo-50"></div>
-      <div class="flex justify-between">
-        <div class="flex items-center gap-2">
-          <bed class="h-5 stroke-indigo-500"></bed>
-          <span class="text-xs text-gray-500">4 Beds</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <bath class="h-5 stroke-indigo-500"></bath>
-          <span class="text-xs text-gray-500">2 Bathrooms</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <mcarre class="h-5 stroke-indigo-500"></mcarre>
-          <span class="text-xs text-gray-500">6x7.5 m²</span>
-        </div>
-      </div>
-    </figcaption>
-  </figure>
+<!-- <div class="grid grid-cols-1 md:grid-cols-2"> -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+  <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+</div>
 
   <div class="flex justify-evenly items-center mt-12 mx-36">
     <div class="flex font-semibold">
@@ -157,6 +50,8 @@
     <div class="mx-4 py-4">
       <img src="src/assets/logo.png" />
     </div>
+
+    
 
     <div class="flex flex-wrap justify-evenly mt-10 mx-20">
       <div>
@@ -310,6 +205,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/vue/solid";
+import Card from "./components/Card.vue";
 
 export default {
   name: "App",
@@ -325,7 +221,8 @@ export default {
     bed,
     bath,
     mcarre,
-  },
+    Card
+},
 };
 </script>
 
