@@ -3,6 +3,7 @@
     <img src="src/assets/logo.png" />
     <MenuAlt4Icon class="h-6 mx-6 my-2"></MenuAlt4Icon>
   </div>
+  
 
   <div class="my-5">
     <h1 class="font-inter font-bold text-center text-black text-4xl m-8">
