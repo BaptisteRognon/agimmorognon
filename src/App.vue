@@ -1,9 +1,34 @@
 <template >
-  <div class="flex justify-between m-4">
+  <div class="flex justify-between m-4  bg-indigo-50">
     <img src="src/assets/logo.png" />
     <MenuAlt4Icon class="h-6 mx-6 my-2"></MenuAlt4Icon>
   </div>
-  
+    <div class="flex flex-grow-0 flex-shrink-0 bg-white py-3">
+      <headera />
+
+      <div class="font-inter flex-grow space-x-3">
+        <nav class="hidden lg:flex lg:gap-8">
+          <ul class="flex-grow flex space-x-7 text-base font-medium mt-3 ml-11">
+            <li>
+              <router-link to="/">Rent</router-link>
+            </li>
+            <li>
+              <router-link to="/">Buy</router-link>
+            </li>
+            <li>
+              <router-link to="/">Sell </router-link>
+            </li>
+            <li>
+              <router-link to="/">Manage Property</router-link>
+            </li>
+            <li>
+              <router-link to="/">Resources</router-link>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        </div>
+  <headera/>
 
   <div class="my-5">
     <h1 class="font-inter font-bold text-center text-black text-4xl m-8">

@@ -13,7 +13,7 @@
           text-left text-gray-900
         "
       >
-        Estatery
+        Jambon 
       </p>
 
       <svg
