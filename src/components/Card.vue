@@ -1,7 +1,7 @@
 <template>
       <figure class="flex flex-col mx-8">
     <img
-      src="src/assets/house.png"
+      src="src/assets/article1.svg"
       alt="house"
       class="rounded-t-lg w-full h-48 object-cover"
     />
